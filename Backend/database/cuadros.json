@@ -1,0 +1,31 @@
+[
+    {
+      "id": 4,
+      "nombre": "Paisaje otoñal",
+      "precio": 120,
+      "descripcion": "Acrílico sobre lienzo - 50x70 cm",
+      "imagen": "http://localhost:3000/uploads/4.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Mar en calma",
+      "precio": 95,
+      "descripcion": "Óleo sobre lienzo - 60x40 cm",
+      "imagen": "http://localhost:3000/uploads/5.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Nocturno en azul",
+      "precio": 150,
+      "descripcion": "Mixta sobre lienzo - 70x50 cm",
+      "imagen": "http://localhost:3000/uploads/6.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Flor en la noche",
+        "precio": 130,
+        "descripcion": "Mixta sobre lienzo - 70x50 cm",
+        "imagen": "http://localhost:3000/uploads/7.jpg"
+      }
+  ]
+  

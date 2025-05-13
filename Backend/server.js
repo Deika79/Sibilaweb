@@ -1,5 +1,3 @@
-// backend/server.js
-
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -9,7 +7,10 @@ const db = require('./database/db'); // Conexión a MySQL
 const PORT = 3000;
 
 // Middleware
-app.use(cors()); // Permitir peticiones desde el frontend
+app.use(cors({
+  origin: 'http://localhost:5500', // Ajusta a tu puerto frontend si es diferente
+  methods: ['GET', 'POST']
+})); // Permitir peticiones desde el frontend
 app.use(express.json()); // Para leer JSON en peticiones
 app.use(express.urlencoded({ extended: true })); // Formularios
 app.use('/uploads', express.static(path.join(__dirname, 'uploads'))); // Servir imágenes
@@ -25,12 +26,15 @@ app.get('/api/cuadros', (req, res) => {
   });
 });
 
+// Servir archivo JSON de cuadros
+app.use('/database', express.static(path.join(__dirname, 'database')));
+
 // Iniciar servidor
 app.listen(PORT, () => {
   console.log(`Servidor backend escuchando en http://localhost:${PORT}`);
 });
 
-//CARRITO
+// CARRITO
 
 app.use(express.json()); // Para que Express pueda manejar solicitudes JSON
 

@@ -34,6 +34,7 @@
   <h2>Galería de Cuadros</h2>
   <div class="cuadros-grid">
     <div class="cuadro">
+      <a href="detalle.html?id=4" class="boton-vermas">Ver más</a>
       <img src="http://localhost:3000/uploads/4.jpg" alt="Cuadro 1">
       <h3>“Paisaje otoñal”</h3>
       <p class="precio">120€</p>
@@ -41,9 +42,11 @@
       <button class="boton-comprar" onclick="agregarAlCarrito('Paisaje otoñal', 120, 'http://localhost:3000/uploads/4.jpg')">
     Comprar
   </button>
-
-    </div>
-    <div class="cuadro">
+  
+  </div>
+    
+  <div class="cuadro">
+    <a href="detalle.html?id=5" class="boton-vermas">Ver más</a>
       <img src="http://localhost:3000/uploads/5.jpg" alt="Cuadro 2">
       <h3>“Flor en calma”</h3>
       <p class="precio">95€</p>
@@ -51,8 +54,11 @@
       <button class="boton-comprar" onclick="agregarAlCarrito('Flor en calma', 95, 'http://localhost:3000/uploads/5.jpg')">
     Comprar
   </button>
+  
+
     </div>
     <div class="cuadro">
+      <a href="detalle.html?id=6" class="boton-vermas">Ver más</a>
       <img src="http://localhost:3000/uploads/6.jpg" alt="Cuadro 3">>
       <h3>“Noche estrellada”</h3>
       <p class="precio">150€</p>
@@ -60,8 +66,12 @@
       <button class="boton-comprar" onclick="agregarAlCarrito('Noche estrellada', 150, 'http://localhost:3000/uploads/6.jpg')">
     Comprar
   </button>
+  
+
     </div>
+    
     <div class="cuadro">
+      <a href="detalle.html?id=7" class="boton-vermas">Ver más</a>
       <img src="http://localhost:3000/uploads/7.jpg" alt="Cuadro 4">>
       <h3>“Horizonte azul”</h3>
       <p class="precio">130€</p>
@@ -69,6 +79,8 @@
       <button class="boton-comprar" onclick="agregarAlCarrito('Paisaje otoñal', 130, 'http://localhost:3000/uploads/7.jpg')">
     Comprar
   </button>
+  
+
     </div>
   </div>
 </section>
@@ -83,5 +95,7 @@
   <p>&copy; 2025 Sibila´s Dreams - Todos los derechos reservados</p>
 </footer>
 <script src="js/main.js"></script>
+<div id="toast" class="toast"></div>
+
 </body>
 </html>
