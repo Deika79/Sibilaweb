@@ -1,0 +1,194 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #faf3e0;
+  border-bottom: 2px solid #e0d3c0;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5a3921;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #a0522d;
+}
+
+/* Bienvenida */
+main .bienvenida {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-image: url("../img/2.png");
+  background-size: cover;         /* La imagen se ajusta al tamaño del contenedor */
+  background-position: center;    /* Centrada */
+  background-repeat: no-repeat;   /* No se repite */
+  color: white;                   /* Para asegurar que el texto se vea bien */
+}
+
+
+main .bienvenida h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #5a3921;
+  padding: 0.3rem 1rem;
+  display: inline-block;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 10%,
+    rgba(255, 255, 255, 0.8) 90%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+/* GALERÍA */
+.galeria {
+  padding: 2rem 1rem;
+  background-color: #fff5ec;
+  text-align: center;
+}
+
+.galeria h2 {
+  color: #5a3921;
+  margin-bottom: 2rem;
+}
+
+.cuadros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.cuadro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.cuadro img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+
+.cuadro:hover {
+  transform: scale(1.02);
+}
+
+
+
+.cuadro h3 {
+  color: #5a3921;
+  margin: 0.5rem 0 0.3rem;
+}
+
+.cuadro .precio {
+  font-weight: bold;
+  color: #a0522d;
+}
+
+.boton-comprar {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #8B4513; /* marrón oscuro */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-comprar:hover {
+  background-color: #A0522D;
+  transform: scale(1.05);
+}
+
+
+/* SECCIÓN DE CONTACTO */
+.contacto-home {
+  background-color: #f0e6dc;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.contacto-home h2 {
+  color: #5a3921;
+  margin-bottom: 1rem;
+}
+
+.contacto-home p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #444;
+}
+
+.boton-contacto {
+  background-color: #a0522d;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.boton-contacto:hover {
+  background-color: #7a3a1d;
+}
+
+
+/* Footer */
+footer {
+  background-color: #faf3e0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 1px solid #e0d3c0;
+}
+

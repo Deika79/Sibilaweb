@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sibila´s Dreams</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/1.png" alt="Logo Arte" />
+      <h1>Sibila´s Dreams</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <a href="carrito.html" class="carrito-link">Ver carrito</a>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bienvenida">
+      <h2>Bienvenidos a mi galería de arte</h2>
+      <p>Descubre mis cuadros originales, todos pintados a mano con pasión y detalle.</p>
+    </section>
+  
+<section class="galeria">
+  <h2>Galería de Cuadros</h2>
+  <div class="cuadros-grid">
+    <div class="cuadro">
+      <img src="http://localhost:3000/uploads/4.jpg" alt="Cuadro 1">
+      <h3>“Paisaje otoñal”</h3>
+      <p class="precio">120€</p>
+      <p>Acrílico sobre lienzo - 50x70 cm</p>
+      <button class="boton-comprar" onclick="agregarAlCarrito('Paisaje otoñal', 120, 'http://localhost:3000/uploads/4.jpg')">
+    Comprar
+  </button>
+
+    </div>
+    <div class="cuadro">
+      <img src="http://localhost:3000/uploads/5.jpg" alt="Cuadro 2">
+      <h3>“Flor en calma”</h3>
+      <p class="precio">95€</p>
+      <p>Óleo sobre lienzo - 40x60 cm</p>
+      <button class="boton-comprar" onclick="agregarAlCarrito('Flor en calma', 95, 'http://localhost:3000/uploads/5.jpg')">
+    Comprar
+  </button>
+    </div>
+    <div class="cuadro">
+      <img src="http://localhost:3000/uploads/6.jpg" alt="Cuadro 3">>
+      <h3>“Noche estrellada”</h3>
+      <p class="precio">150€</p>
+      <p>Acrílico sobre tabla - 60x80 cm</p>
+      <button class="boton-comprar" onclick="agregarAlCarrito('Noche estrellada', 150, 'http://localhost:3000/uploads/6.jpg')">
+    Comprar
+  </button>
+    </div>
+    <div class="cuadro">
+      <img src="http://localhost:3000/uploads/7.jpg" alt="Cuadro 4">>
+      <h3>“Horizonte azul”</h3>
+      <p class="precio">130€</p>
+      <p>Acuarela enmarcada - 45x65 cm</p>
+      <button class="boton-comprar" onclick="agregarAlCarrito('Paisaje otoñal', 130, 'http://localhost:3000/uploads/7.jpg')">
+    Comprar
+  </button>
+    </div>
+  </div>
+</section>
+
+<section class="contacto-home">
+  <h2>Pedidos Personalizados</h2>
+  <p>¿Quieres un cuadro en un tamaño o estilo especial? ¡También realizamos pedidos personalizados!</p>
+  <a href="contacto.html" class="boton-contacto">Haz tu encargo</a>
+</section> 
+
+<footer>
+  <p>&copy; 2025 Sibila´s Dreams - Todos los derechos reservados</p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
